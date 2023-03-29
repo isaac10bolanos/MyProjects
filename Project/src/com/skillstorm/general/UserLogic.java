@@ -5,13 +5,12 @@ import java.util.Scanner;
 
 public class UserLogic {
 
-	// for the setup i have no one really needs to access any of this
 		private Player[] users;
 		private int numUsers;
 		static String name;
 
 		public UserLogic() {
-			// im choosing what we start with
+			
 			this.users = new Player[3];
 			this.users[0] = new Master("Yoda", "Master", 10, "Green Lightsaber");
 			this.users[1] = new Knight("Obi-Wan", "Knight", 8, "Blue Lightsaber");
@@ -110,36 +109,9 @@ public class UserLogic {
 			Logic.lineSeperator(40);
 			
 			Logic.anythingContinue();
-			
-//			System.out.println("Player traits:\n" + "\nJedi type: " + user.getType()
-//			+ "\nforce level: "+ user.getForce() + "\nJedi weapon: " + user.getWeapon());
 					
-			
 			return user;
 		}
-		
-//		public Player newUser(Scanner in) {
-//		System.out.println("I have just a few questions to ask you");
-//		System.out.print("What is your name?: ");
-//		String name = in.nextLine();
-//		
-//		System.out.print("What is your Jedi type?: ");
-//		String type = in.nextLine();
-//		
-//		System.out.println("What is your Force level?: ");
-//		int force = in.nextInt();
-//		
-//		System.out.print("What is your weapon?: ");
-//		String weapon = in.nextLine();
-//		System.out.println("Processing......");
-//		
-//		// I need to hand a buyer a name, email, and phoneNumber
-//		// so i need to ask my user for those things
-//		Player user = new Player(name, type, force, weapon);
-//		System.out.println("Welcome to our service, " + user.getName() + "!");
-//		
-//		return user;
-//	}
 	}
 	
 
