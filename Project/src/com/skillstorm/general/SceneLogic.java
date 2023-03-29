@@ -31,7 +31,7 @@ public class SceneLogic {
 				choice = 0;
 				
 			}
-			if (choice < 0 || choice > 3) {
+			if (choice < 1 || choice > 3) {
 				System.out.println("Please select a correct number.");
 				cont = true;
 			} else {

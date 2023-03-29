@@ -15,7 +15,7 @@ public Master() {}
 		System.out.println("\"In a dark place we find ourselves,\n"
 				+ "and a little more knowledge lights our way.\"");
 		super.setForce(getForce() - 1);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in chest scene (option 1)
 		
 	}
@@ -25,7 +25,7 @@ public Master() {}
 		System.out.println("Fear has awakened in you.\n");
 		System.out.println("\"Fear is the path to the dark side.\"");
 		super.setForce(getForce() - 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in chest scene (option 2)
 		
 	}
@@ -35,7 +35,7 @@ public Master() {}
 		System.out.println("What is unknown has been kept from you by your faith in the force.\n");
 		System.out.println("\"I'm one with the Force. The Force is with me.\"");
 		super.setForce(getForce() + 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// blind man walking through blasts
 		// used in chest scene (option 3)
 	}
@@ -45,7 +45,7 @@ public Master() {}
 		System.out.println("\"Fear leads to anger, anger leads to hate,"
 				+ " hate leads to suffering.\"");
 		super.setForce(getForce() - 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in alien scene (option 2)
 		
 	}
@@ -55,7 +55,7 @@ public Master() {}
 		System.out.println("You're very clever, did you see that somewhere?\n");
 		System.out.println("\"Would somebody get his big walking carpet out of my way!\"");
 		super.setForce(getForce() + 1);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in rancor scene (option 2)
 		
 	}
@@ -65,7 +65,7 @@ public Master() {}
 		System.out.println("When using the force, you know precisely when to act.\n");
 		System.out.println("\"Do or do not. There is no try.\"");
 		super.setForce(getForce() + 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in rancor scene (option 3)
 	}
 	
@@ -74,7 +74,7 @@ public Master() {}
 		System.out.println("With time not on your side, you made a bad decision.\n");
 		System.out.println("\"Never tell me the odds.\""); // han solo
 		super.setForce(getForce() - 1);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in lady scene (option 3)
 	}
 	
@@ -83,7 +83,7 @@ public Master() {}
 
 		System.out.println(UserLogic.name + ", the Force runs strong in your family.");
 		super.setForce(getForce() + 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in lady scene (option 1)
 	}
 	
@@ -93,7 +93,7 @@ public Master() {}
 				+ " of assistance.\n");
 		System.out.println("\"Control, control, you must learn control.\"");
 		super.setForce(getForce() - 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in lady scene (option 2)
 	}
 	
@@ -101,7 +101,7 @@ public Master() {}
 	public void strong() {
 		System.out.println("The Force is strong with this one. Good job " + UserLogic.name + "!");
 		super.setForce(getForce() + 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in door scene (option 3)
 	}
 	
@@ -112,7 +112,7 @@ public Master() {}
 		System.out.println("\"Once you start down the dark path,\n"
 				+ "forever will it dominate your destiny.\"");
 		super.setForce(getForce() - 1);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in door scene (option 1)
 		
 	}
@@ -122,7 +122,7 @@ public Master() {}
 		System.out.println("\"When you look at the dark side, careful you must be.\n"
 				+ "For the dark side looks back\"");
 		super.setForce(getForce() - 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in door scene (option 2)
 		
 	}
@@ -132,7 +132,7 @@ public Master() {}
 		System.out.println("Twisted by the dark side, young " + UserLogic.name +
 				" has become.");
 		super.setForce(getForce() - 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in rancor scene (option 1)
 	}
 	
@@ -141,7 +141,7 @@ public Master() {}
 		System.out.println("\"Size matters not. Look at me.\n"
 				+ "Judge me by my size, do you? Hmm? Hmm.\"");
 		super.setForce(getForce() + 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in alien scene (option 1)
 	}
 	
@@ -149,7 +149,7 @@ public Master() {}
 	public void twisted() {
 		System.out.println("\"Smaller in number are we, but larger in mind.\"");
 		super.setForce(getForce() + 1);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in alien scene (option 3)
 	}
 

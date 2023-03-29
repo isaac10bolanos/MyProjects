@@ -14,7 +14,7 @@ public class Knight extends Player{
 		System.out.println("In your Jedi knight approach, you did not use your skills to sense something was abyss.\n");
 		System.out.println("\"Remember...the Force will be with you, always.\"");
 		super.setForce(getForce() - 1);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in chest scene (option 1)
 	}
 	
@@ -23,7 +23,7 @@ public class Knight extends Player{
 		
 		System.out.println(UserLogic.name + " why do I get the feeling you're going to be the death of me?");
 		super.setForce(getForce() - 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in chest scene (option 2)
 		
 	}
@@ -33,7 +33,7 @@ public class Knight extends Player{
 		System.out.println("It was an excellent use of your force knowledge.\n");
 		System.out.println("\"These aren't the DROIDS you're looking for.\"");
 		super.setForce(getForce() + 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in chest scene (option 3)
 		
 		
@@ -44,7 +44,7 @@ public class Knight extends Player{
 		System.out.println("Rather than taking the time to wait, you attacked so reluctantly.\n");
 		System.out.println(UserLogic.name + ", my allegiance is to the Republic, to democracy!");
 		super.setForce(getForce() - 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in rancor scene (option 1)
 	}
 	
@@ -52,7 +52,7 @@ public class Knight extends Player{
 	public void clever() {
 		System.out.println(UserLogic.name + " is quite clever, you know...for a human being.");
 		super.setForce(getForce() + 1);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// C-3P0 quote
 		// used in rancor scene (option 2)
 	} 
@@ -63,7 +63,7 @@ public class Knight extends Player{
 		System.out.println(getName() + " waited for the rancor to stumble and then planned an attack.\n");
 		System.out.println("\"Hello There!\"");
 		super.setForce(getForce() + 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in rancor scene (option 3)
 		
 	}
@@ -72,7 +72,7 @@ public class Knight extends Player{
 	public void pass() {
 		System.out.println("\"Be mindful of your thoughts, " + UserLogic.name + ", they betray you.\"");
 		super.setForce(getForce() - 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// obi-wan said to anakin (Attack of the Clones)
 		// used in lady scene (option 2)
 	}
@@ -82,7 +82,7 @@ public class Knight extends Player{
 		System.out.println("It is your duty to help when given the chance.\n");
 		System.out.println("\"In my experience, there's no such thing as luck.\"");
 		super.setForce(getForce() + 1);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in lady scene (option 3)
 	}
 	
@@ -91,7 +91,7 @@ public class Knight extends Player{
 		System.out.println("You are an outstanding Jedi guardian of the unprotected.\n");
 		System.out.println("\"Help me, " + getName() + ". You're my only hope.\"");
 		super.setForce(getForce() + 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// LEIA quote
 		// used in lady scene (option 1)
 	}
@@ -102,7 +102,7 @@ public class Knight extends Player{
 		System.out.println("\"This is the way.\""); // mandolorian
 		// used in door scene (option 3)
 		super.setForce(getForce() + 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		
 	}
 	
@@ -110,7 +110,7 @@ public class Knight extends Player{
 	public void right() {
 		System.out.println(UserLogic.name + " I've got a bad feeling about this.");
 		super.setForce(getForce() - 1);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in door scene (option 1)
 	}
 	
@@ -119,7 +119,7 @@ public class Knight extends Player{
 		System.out.println("\"You have allowed this dark lord to twist your mind, until now,\n"
 			+	"until now, you've become the very thing you swore to destroy.\"");
 		super.setForce(getForce() - 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in door scene (option 2)
 	}
 	
@@ -128,7 +128,7 @@ public class Knight extends Player{
 		System.out.println("As you learn the ways of the Jedi, the force is strong in your hands.\n");
 		System.out.println("\"How wude!\"");
 		super.setForce(getForce() + 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in alien scene (option 1)
 	}
 	
@@ -137,7 +137,7 @@ public class Knight extends Player{
 		System.out.println("Jedi weapons can only be handled by skilled Jedi knights.\n");
 		System.out.println("\"So Uncivilized.\"");
 		super.setForce(getForce() + 1);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in alien scene (option 3)
 		
 	}
@@ -147,7 +147,7 @@ public class Knight extends Player{
 		System.out.println("It is here that fear leads to the dark side.\n");
 		System.out.println("\"There's always a bigger fish.\"");
 		super.setForce(getForce() - 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in alien scene (option 2)
 	}
 

@@ -15,7 +15,7 @@ public class Sith extends Player{
 		System.out.println("\"You can't stop the change, any more than you\n"
 				+ "can stop the suns from setting.\"");
 		super.setForce(getForce() + 1);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in chest scene (option 1)
 		
 	}
@@ -24,7 +24,7 @@ public class Sith extends Player{
 	public void simple() {
 		System.out.println("\"I'm just a simple man trying to make my way in the universe.\"");
 		super.setForce(getForce() + 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// boba fett quote
 		// used in chest scene (option 2)
 	}
@@ -33,7 +33,7 @@ public class Sith extends Player{
 	public void oneWithForce() {
 		System.out.println("Be careful not to choke on your aspirations, " + UserLogic.name);
 		super.setForce(getForce() - 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in chest scene (option 3)
 		
 	}
@@ -43,7 +43,7 @@ public class Sith extends Player{
 		System.out.println("The Sith are like this, with no regard for the opposition.\n");
 		System.out.println("\"I can bring you in warm, or I can bring you in cold.\"");
 		super.setForce(getForce() + 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// mandolorian
 		// used in rancor scene (option 1)
 		
@@ -53,7 +53,7 @@ public class Sith extends Player{
 	public void clever() {
 		System.out.println(UserLogic.name + " you're asking me to be rational. I know that is something I cannot do.");	
 		super.setForce(getForce() - 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in rancor scene (option 2)
 		
 	}
@@ -64,7 +64,7 @@ public class Sith extends Player{
 				+ "because of your inadequacy.\n");
 		System.out.println("\"I find your lack of faith disturbing.\"");
 		super.setForce(getForce() - 1);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in rancor scene (option 3)
 		
 	}
@@ -74,7 +74,7 @@ public class Sith extends Player{
 		System.out.println("The woman reminds you of your mother, but you have no compassion for anyone else.\n");
 		System.out.println("\"Life seems so much simpler when you're fixing things.\"");
 		super.setForce(getForce() - 1);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in lady scene (option 3)
 		
 	}
@@ -84,7 +84,7 @@ public class Sith extends Player{
 		System.out.println("She could of been your mother, you could of saved her...\n");
 		System.out.println("\"Mom, you said that the biggest problem in this universe is nobody helps each other.\"");
 		super.setForce(getForce() - 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in lady scene (option 2)
 		
 	}
@@ -94,7 +94,7 @@ public class Sith extends Player{
 		System.out.println("You want to help her because she reminds you of someone very dear.\n");
 		System.out.println("\"I won't lose you the way I lost my mother.\"");
 		super.setForce(getForce() + 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		 // anakin talking to padme
 		// used in lady scene (option 1)
 		
@@ -105,7 +105,7 @@ public class Sith extends Player{
 		System.out.println("I hope so for your sake, " + UserLogic.name + ". The Emperor"
 				+	" is not as forgiving as I am.");
 		super.setForce(getForce() - 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in door scene (option 3)
 		
 	}
@@ -114,7 +114,7 @@ public class Sith extends Player{
 	public void right() {
 		System.out.println("\"You were right, " + UserLogic.name + ". You were right...\"");
 		super.setForce(getForce() + 1);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in door scene (option 1)
 		
 	}
@@ -123,7 +123,7 @@ public class Sith extends Player{
 	public void twist() {
 		System.out.println(UserLogic.name + ", we would be honored if you joined us.");
 		super.setForce(getForce() + 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in door scene (option 2)
 		
 	}
@@ -133,7 +133,7 @@ public class Sith extends Player{
 		System.out.println("It's time to unleash your full anger on those aliens. What a remarkable scene!\n");
 		System.out.println("\"You don't know the power of the Dark Side!\"");
 		super.setForce(getForce() + 1);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in alien scene (option 3)
 		
 	}
@@ -143,7 +143,7 @@ public class Sith extends Player{
 		System.out.println("Those poor aliens were subjected to your full power.\n");
 		System.out.println("\"If you only knew the power of the dark side.\"");
 		super.setForce(getForce() + 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in alien scene (option 1)
 	}
 	
@@ -152,7 +152,7 @@ public class Sith extends Player{
 		System.out.println("While fear is a part of the dark side, " + getName() + " wouldn't cower in fear.\n");
 		System.out.println("\"You underestimate my power!\"");
 		super.setForce(getForce() - 2);
-		System.out.println(getForce());
+		// System.out.println(getForce());
 		// used in alien scene (option 2)
 		
 	}
