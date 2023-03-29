@@ -15,27 +15,22 @@ public class TextAdventure {
 		UserLogic player = new UserLogic(); // create instance for player use
 		Player user = player.welcome(in); // create player class  
 		
-		// not sure if I need this but keep just in case
-//		if (user != null) {
-//			
-//		}
-		
 		// wrapper class for int 
 		ArrayList<Integer>scenes = new ArrayList<Integer>();
 		// new array list that can add more on the list
 		
 		// length of my ArrayList(5)
 		while(scenes.size() < 5) {
-			int random = rand.nextInt(5);
-			if(!scenes.contains(random)) {
+			int random = rand.nextInt(5); // randomize 5 initial scenes
+			if(!scenes.contains(random)) { // if it doesn't contain it, add it
 				scenes.add(random);
 			}
 		}
 		
-		// add the final scene
+		// adding the final scene
 		scenes.add(5);
 		
-		// looping through each scene randomly, last 1 is final scene
+		// looping through first 5 scenes randomly, last 1 is final scene
 		for(int num: scenes) {
 			if(num == 0) {
 				scenerios.door(user, in);
@@ -66,8 +61,6 @@ public class TextAdventure {
 				
 				in.close();
 				// closes the scanner
-				
-				
 			}		
 		}
 	}	

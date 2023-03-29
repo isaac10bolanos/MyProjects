@@ -227,7 +227,7 @@ public class SceneLogic {
 		int choice;
 		
 		Logic.clearConsole();
-		Logic.printHeading("You enter an area where there is an unusal box in the middle of the room.\n"
+		Logic.printHeading("You enter an area where there is an odd looking box in the middle of the room.\n"
 								+ "Your curiosity leads you to...");
 		System.out.println();
 		user.useForce();

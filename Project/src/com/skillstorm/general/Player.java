@@ -146,7 +146,7 @@ public abstract class Player {
 	
 	@Override
 	public String toString() {
-		return String.format("Player traits:\n\nJedi type: %s\nforce level: %d\nJedi weapon: %s\n",
+		return String.format("Player traits:\n\nJedi type: %s\nForce level: %d\nJedi weapon: %s\n",
 				this.type, this.force, this.weapon);
 		// good to display character
 	}
