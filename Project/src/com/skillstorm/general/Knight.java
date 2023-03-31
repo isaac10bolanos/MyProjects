@@ -70,7 +70,7 @@ public class Knight extends Player{
 	
 	@Override
 	public void pass() {
-		System.out.println("\"Be mindful of your thoughts, " + UserLogic.name + ", they betray you.\"");
+		System.out.println("Be mindful of your thoughts, " + UserLogic.name + ", they betray you.");
 		super.setForce(getForce() - 2);
 		// System.out.println(getForce());
 		// obi-wan said to anakin (Attack of the Clones)
@@ -154,7 +154,7 @@ public class Knight extends Player{
 	@Override
 	public void badEndPlayer() {
 		Logic.printHeading("\nLet's imagine you are fighting your best friend on Mustafar.\n"
-				+ "In the story, he told how he turned to the dark side and killed\n"
+				+ "In the story, he told you how he turned to the dark side and killed\n"
 				+ "younglings. That is the pain and suffering you are going through.\n"
 				+ "You have failed " + getName() +".\n");
 		

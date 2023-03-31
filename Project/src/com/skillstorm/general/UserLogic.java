@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class UserLogic {
 
 		private Player[] users;
-		private int numUsers;
+//		private int numUsers;
 		static String name;
 
 		public UserLogic() {
@@ -15,11 +15,12 @@ public class UserLogic {
 			this.users[0] = new Master("Yoda", "Master", 10, "Green Lightsaber");
 			this.users[1] = new Knight("Obi-Wan", "Knight", 8, "Blue Lightsaber");
 			this.users[2] = new Sith("Vader", "Sith", 8, "Red Lightsaber");
-			Master actualMaster = (Master)users[0];
-			Knight actualKnight = (Knight)users[1];
-			Sith actualVader = (Sith)users[2];
+//			Master actualMaster = (Master)users[0];
+//			Knight actualKnight = (Knight)users[1];
+//			Sith actualVader = (Sith)users[2];
+			// don't actually need these
 			
-			this.numUsers = 3;
+//			this.numUsers = 3;
 		}
 		
 		public Player welcome(Scanner in) {
