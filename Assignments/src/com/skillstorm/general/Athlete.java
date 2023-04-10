@@ -33,8 +33,16 @@ public class Athlete {
 		return this.win;
 	}
 	
+	public void setWin(int win) {
+		this.win = win;
+	}
+	
 	public int getLoss() {
 		return this.loss;
+	}
+	
+	public void setLoss(int loss) {
+		this.loss = loss;
 	}
 	
 	@Override

@@ -18,7 +18,7 @@ public class Programmer implements Comparable<Programmer>{
 	}
 	
 	public void addLanguage(String language) {
-		if (!languages.contains(language) && language != null) {
+		if (!languages.contains(language) && language != null && !language.trim().equals("")) {
 		languages.add(language);
 		
 			} else if (language == null) {
@@ -76,9 +76,15 @@ public class Programmer implements Comparable<Programmer>{
 		this.company = company;
 	}
 	
+	@SuppressWarnings("unchecked")
 	public ArrayList<String> getLanguages(){
-		return this.languages;
+		return (ArrayList<String>)languages.clone();
 	}
+	
+	// a different way to return a new ArrayList<>();
+//	public ArrayList<String> getLanguages(){
+//	return new ArrayList<String>(this.languages);
+//	}
 	
 	@Override
 	public String toString() {

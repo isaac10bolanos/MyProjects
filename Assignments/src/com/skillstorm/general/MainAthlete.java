@@ -27,9 +27,9 @@ public class MainAthlete {
 		athletes.add(jack);
 //		athletes.sort(comparator); will throw a NullPointerException
 		
-		Athlete liam = new Athlete("Liam", 35, 15);
-		Athlete noah = new Athlete("Noah", 60, 45);
-		Athlete oliver = new Athlete("Oliver", 47, 23);
+		Athlete liam = new Athlete("Liam", 20, 5);
+		Athlete noah = new Athlete("Noah", 60, 15);
+		Athlete oliver = new Athlete("Oliver", 29, 10);
 		Athlete william = new Athlete("William", 53, 9);
 		Athlete henry = null;
 		
