@@ -1,6 +1,5 @@
 package com.skillstorm.general;
 
-
 import java.util.Comparator;
 
 public class Athlete {
@@ -20,7 +19,6 @@ public class Athlete {
 		return winningRatio;
 	}
 	
-	
 	public String getName() {
 		return this.name;
 	}
@@ -33,22 +31,14 @@ public class Athlete {
 		return this.win;
 	}
 	
-	public void setWin(int win) {
-		this.win = win;
-	}
-	
 	public int getLoss() {
 		return this.loss;
 	}
 	
-	public void setLoss(int loss) {
-		this.loss = loss;
-	}
-	
 	@Override
 	public String toString() {
-		return String.format("Athlete: %s, Wins: %d, Losses: %d, Win ratio: %.0f%s%n",
-				this.name, this.win, this.loss, winRatio(), "%");
+		return String.format("Athlete: %s, Wins: %d, Losses: %d, Win ratio: %.0f%%%n",
+				this.name, this.win, this.loss, winRatio());
 	}
 	
 	public static class AthleteComparator implements Comparator<Athlete>{
