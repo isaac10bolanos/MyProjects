@@ -3,12 +3,12 @@ package com.skillstorm.beans;
 public class Users {
 	private String name;
 	private String email;
-	private int phoneNumber;
-	private int id;
+	private long phoneNumber;
+	private long id;
 	
 	public Users() {}
 
-	public Users(String name, String email, int phoneNumber, int id) {
+	public Users(String name, String email, long phoneNumber, long id) {
 		this.name = name;
 		this.email = email;
 		this.phoneNumber = phoneNumber;
@@ -31,19 +31,19 @@ public class Users {
 		this.email = email;
 	}
 
-	public int getPhoneNumber() {
+	public long getPhoneNumber() {
 		return phoneNumber;
 	}
 
-	public void setPhoneNumber(int phoneNumber) {
+	public void setPhoneNumber(long phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	

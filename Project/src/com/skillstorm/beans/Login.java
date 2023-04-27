@@ -9,7 +9,6 @@ public class Login {
 	
 	public Login(Scanner sc) {
 		this.sc = sc;
-		makeUsername();
 	}
 	
 	public void makeUsername() {
