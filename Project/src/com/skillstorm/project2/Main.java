@@ -1,4 +1,4 @@
-package com.skillstorm.beans;
+package com.skillstorm.project2;
 
 import java.io.BufferedWriter;
 import java.io.File;

@@ -1,4 +1,4 @@
-package com.skillstorm.beans;
+package com.skillstorm.project2;
 
 public class Users {
 	private String name;
