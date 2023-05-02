@@ -1,4 +1,4 @@
-package www.skillstorm.singleton;
+package com.skillstorm.singleton;
 
 public class Evolution {
 	
@@ -28,9 +28,22 @@ public class Evolution {
 	public static Evolution getInstance(int generation) {
 		synchronized (mutex) {
 			if(instance == null) {
-				instance = new Evolution();
+				instance = new Evolution(generation);
 			}
 			return instance;
+		}
+	}
+	
+	public int getGeneration() {
+		if(this.generation == 10) {
+			System.out.println("EVO X");
+			return this.generation;
+		} else if(this.generation == 9) {
+			System.out.println("EVO |X");
+			return this.generation;
+		} else {
+			System.out.println("EVO V|||");
+			return this.generation;
 		}
 	}
 
