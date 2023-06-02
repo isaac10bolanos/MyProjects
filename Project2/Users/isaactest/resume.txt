@@ -1,0 +1,14 @@
+Name: Isaac
+
+Email: isaac@gmail.com
+
+Phone number: 303-098-0987
+
+Work experience:
+work
+
+Education:
+- edu
+
+Certifications:
+◆certs
