@@ -1,0 +1,46 @@
+<main>
+
+
+    <h1>All Books</h1>
+
+    <ng-container *ngFor="let book of localBooks">
+
+
+    <app-book [book]="book"></app-book>
+
+    </ng-container>
+
+    <form *ngIf="!chosenBookId">
+
+        <h2>Add New Book</h2>
+
+        <label for="title">Title Name</label>
+        <!-- [(ngModel)] two-way binds the value in this field to a variable -->
+        <!-- we must have a matching name property -->
+        <input type="text" id="title" name="formTitle" [(ngModel)]= "formTitle">
+
+        <label for="author">Author Name</label>
+        <input type="text" id="author" name="formAuthor" [(ngModel)]= "formAuthor">
+
+        <label for="genre">Genre</label>
+        <input type="text" id="genre" name="formGenre" [(ngModel)]= "formGenre">
+
+        <label for="publisher">Publisher Name</label>
+        <input type="text" id="publisher" name="formPublisher" [(ngModel)]= "formPublisher">
+
+        <label for="bookCount">Book count </label>
+        <input type="number" id="bookCount" name="formBookCount" [(ngModel)]= "formBookCount" min="0" max="2023">
+
+        <!-- this button calls the method from out .ts file 
+             we do not need to pass in data, because we already have it in ...-->
+        <button (click)="addNewBook()">ADD</button>
+
+        <!-- this displays the current value of each variable we've bound -->
+        <!-- Name: {{ formName }} <br>
+        Type: {{ formType }} <br>
+        Founded: {{ formFounded }} -->
+
+    </form>
+
+
+</main>
