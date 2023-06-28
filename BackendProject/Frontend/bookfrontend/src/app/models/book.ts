@@ -11,19 +11,22 @@ export class Book {
     genre: string = '';
     publisher: string = '';
     published: number = 0;
+    imageUrl: string = '';
 
     constructor(bookId: number,
                 title: string,
                 author: string,
                 genre: string,
                 publisher: string,
-                published: number) {
+                published: number,
+                imageUrl: string) {
     this.bookId = bookId;
     this.title = title;
     this.author = author;
     this.genre = genre;
     this.publisher = publisher;
     this.published = published;
+    this.imageUrl = imageUrl;
 }
 
 

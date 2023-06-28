@@ -33,9 +33,13 @@ public class Book {
 	@Column(name = "published")
 	private int published;
 	
+	@Column(name = "image_ulr")
+	private String imageUrl;
+	
 	public Book() {}
 
-	public Book(int bookId, String title, String author, String genre, String publisher, int published) {
+	public Book(int bookId, String title, String author, String genre, String publisher, int published,
+			String imageUrl) {
 		super();
 		this.bookId = bookId;
 		this.title = title;
@@ -43,6 +47,7 @@ public class Book {
 		this.genre = genre;
 		this.publisher = publisher;
 		this.published = published;
+		this.imageUrl = imageUrl;
 	}
 
 	public int getBookId() {
@@ -92,6 +97,14 @@ public class Book {
 	public void setPublished(int published) {
 		this.published = published;
 	}
+	
+	public String getImageUrl() {
+		return this.imageUrl;
+	}
+	
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
+	}
 
 	@Override
 	public boolean equals(Object obj) {
@@ -103,18 +116,14 @@ public class Book {
 			return false;
 		Book other = (Book) obj;
 		return Objects.equals(author, other.author) && bookId == other.bookId && Objects.equals(genre, other.genre)
-				&& published == other.published && Objects.equals(publisher, other.publisher)
-				&& Objects.equals(title, other.title);
+				&& Objects.equals(imageUrl, other.imageUrl) && published == other.published
+				&& Objects.equals(publisher, other.publisher) && Objects.equals(title, other.title);
 	}
 
 	@Override
 	public String toString() {
 		return "Book [bookId=" + bookId + ", title=" + title + ", author=" + author + ", genre=" + genre
-				+ ", publisher=" + publisher + ", published=" + published + "]";
+				+ ", publisher=" + publisher + ", published=" + published + ", imageUrl=" + imageUrl + "]";
 	}
-	
-	
-	
-	
 
 }

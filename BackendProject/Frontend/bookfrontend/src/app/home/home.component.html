@@ -1,11 +1,24 @@
-<!-- <header>
-    <h1>Picture Home Page</h1>
-</header> -->
+
 
 <main>
     <div class="image-container">
         <img src="../assets/pexels-suzy-hazelwood-1098601.jpg" alt="Book shelf">
         <h1>Picture Home Page</h1>
     </div>
+
+    <section class="featured-book">
+        <ng-container *ngFor="let book of localBooks">
+        <div class="book-image">
+            <img [src]="book.imageUrl" alt="Featured Book">
+        </div>
+        
+            <div class="book-details">
+                <h2 class="book-title">{{ book.title }}</h2>
+                <p class="book-author">{{ book.author }}</p>
+                <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum lectus vitae facilisis posuere.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </ng-container>
+    </section>
 </main>
 

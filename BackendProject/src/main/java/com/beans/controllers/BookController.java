@@ -26,6 +26,11 @@ public class BookController {
 		return repo.findAll();
 	}
 	
+	@GetMapping("/featured")
+	public Iterable<Book> findGreat() {
+		return repo.findGreat("The Great Gatsby");
+	}
+	
 	@PostMapping
 	public ResponseEntity<Book> addBook(@RequestBody Book book){
 		if(repo.existsById(book.getBookId())) {
