@@ -12,6 +12,7 @@ export class Book {
     publisher: string = '';
     published: number = 0;
     imageUrl: string = '';
+    description: string = '';
 
     constructor(bookId: number,
                 title: string,
@@ -19,7 +20,8 @@ export class Book {
                 genre: string,
                 publisher: string,
                 published: number,
-                imageUrl: string) {
+                imageUrl: string,
+                description: string) {
     this.bookId = bookId;
     this.title = title;
     this.author = author;
@@ -27,6 +29,7 @@ export class Book {
     this.publisher = publisher;
     this.published = published;
     this.imageUrl = imageUrl;
+    this.description = description;
 }
 
 

@@ -33,13 +33,16 @@ public class Book {
 	@Column(name = "published")
 	private int published;
 	
-	@Column(name = "image_ulr")
+	@Column(name = "image_url")
 	private String imageUrl;
+	
+	@Column(name = "description")
+	private String description;
 	
 	public Book() {}
 
-	public Book(int bookId, String title, String author, String genre, String publisher, int published,
-			String imageUrl) {
+	public Book(int bookId, String title, String author, String genre, String publisher, int published, String imageUrl,
+			String description) {
 		super();
 		this.bookId = bookId;
 		this.title = title;
@@ -48,6 +51,7 @@ public class Book {
 		this.publisher = publisher;
 		this.published = published;
 		this.imageUrl = imageUrl;
+		this.description = description;
 	}
 
 	public int getBookId() {
@@ -105,6 +109,14 @@ public class Book {
 	public void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
 	}
+	
+	public String getDescription() {
+		return this.description;
+	}
+	
+	public void setDescription(String description) {
+		this.description = description;
+	}
 
 	@Override
 	public boolean equals(Object obj) {
@@ -115,7 +127,8 @@ public class Book {
 		if (getClass() != obj.getClass())
 			return false;
 		Book other = (Book) obj;
-		return Objects.equals(author, other.author) && bookId == other.bookId && Objects.equals(genre, other.genre)
+		return Objects.equals(author, other.author) && bookId == other.bookId
+				&& Objects.equals(description, other.description) && Objects.equals(genre, other.genre)
 				&& Objects.equals(imageUrl, other.imageUrl) && published == other.published
 				&& Objects.equals(publisher, other.publisher) && Objects.equals(title, other.title);
 	}
@@ -123,7 +136,10 @@ public class Book {
 	@Override
 	public String toString() {
 		return "Book [bookId=" + bookId + ", title=" + title + ", author=" + author + ", genre=" + genre
-				+ ", publisher=" + publisher + ", published=" + published + ", imageUrl=" + imageUrl + "]";
+				+ ", publisher=" + publisher + ", published=" + published + ", imageUrl=" + imageUrl + ", description="
+				+ description + "]";
 	}
+
+
 
 }

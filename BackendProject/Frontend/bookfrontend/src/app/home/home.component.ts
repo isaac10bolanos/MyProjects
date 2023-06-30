@@ -31,7 +31,8 @@ export class HomeComponent implements OnInit {
                 book.genre,
                 book.publisher,
                 book.published,
-                book.imageUrl
+                book.imageUrl,
+                book.description
               )
           );
         }

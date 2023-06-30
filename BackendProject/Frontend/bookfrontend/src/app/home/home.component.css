@@ -1,9 +1,9 @@
 
 
-h1 {
+/* h1 {
     margin: 0;
     font-size: 28px;
-}
+} */
 
 main {
     display: flex;
@@ -41,7 +41,7 @@ main {
 
 h1 {
     position: absolute;
-    top: 50%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
@@ -105,4 +105,80 @@ h1 {
 }
 
 
+/* Section with icons */
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 5px;
+    transition: transform 0.3s;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-media a:hover img {
+    transform: translateY(-5px);
+}
+
+.social-media .gmail-icon {
+    width: 35px;
+}
+
+.social-media .youtube-icon {
+    width: 35px;
+}
+
+/* Hours of Operation -- Holidays and Closures */
+
+.info-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .hours-of-operation {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  .holidays-closures {
+    flex: 1;
+    background-color: #e0e0e0;
+    padding: 10px;
+  }
+  
+  .hours-of-operation h2,
+  .holidays-closures h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .hours-of-operation table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .hours-of-operation table td {
+    padding: 3px;
+  }
+  
+  .holidays-closures ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .holidays-closures li {
+    margin-bottom: 5px;
+  }
 

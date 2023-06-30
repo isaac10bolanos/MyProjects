@@ -3,22 +3,102 @@
 <main>
     <div class="image-container">
         <img src="../assets/pexels-suzy-hazelwood-1098601.jpg" alt="Book shelf">
-        <h1>Picture Home Page</h1>
+        <h1>Discover Captivating Worlds: Our Book Home Page</h1>
     </div>
+<section>
+    <!-- <section class="content-section">
+        <div class="content">
+            <h2>Welcome to My Book Website</h2>
+            <p>Discover a world of captivating stories and literary adventures. Explore our curated collection of books, find new reading recommendations, and connect with fellow bookworms.</p>
+        </div>
+    </section> -->
 
     <section class="featured-book">
         <ng-container *ngFor="let book of localBooks">
         <div class="book-image">
-            <img [src]="" alt="Featured Book">
+            <img [src]="book.imageUrl" alt="Featured Book">
         </div>
         
-            <div class="book-details">
-                <h2 class="book-title">{{ book.title }}</h2>
-                <p class="book-author">{{ book.author }}</p>
-                <p class="book-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum lectus vitae facilisis posuere.</p>
-                <a href="#" class="btn">Learn More</a>
-            </div>
-        </ng-container>
+        <div class="book-details">
+            <h2 class="book-title">{{ book.title }}</h2>
+            <p class="book-author">{{ book.author }}</p>
+            <p class="book-description">{{ book.description }}</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </ng-container>
     </section>
+
+
+    <section>
+        <div class="hours-of-operation">
+            <h2>Hours of Operation</h2>
+            <table>
+                <tr>
+                    <td>Monday</td>
+                    <td>9:00 AM - 5:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>9:00 AM - 5:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>9:00 AM - 5:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>9:00 AM - 5:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>9:00 AM - 5:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>10:00 AM - 3:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Closed</td>
+                </tr>
+            </table>
+        </div>
+        <div class="holidays-closures">
+            <h2>Holidays and Closures</h2>
+            <ul>
+                <li>New Year's Day (January 1)</li>
+                <li>Independence Day (July 4)</li>
+                <li>Thanksgiving Day (Fourth Thursday of November)</li>
+                <li>Christmas Day (December 25)</li>
+            </ul>
+        </div>
+    </section>
+
+    
+    <section>
+        <h2>Connect with me</h2>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/isaac-bolanos-94ba83244/" target="_blank">
+                <img src="..//../assets/linkedinicon.png" alt="LinkedIn">
+            </a>
+            <a href="mailto:isaac.m.bolanos@gmail.com" target="_blank">
+                <img src="..//../assets/gmailicon.png" alt="Gmail" class="gmail-icon">
+            </a>
+            <a href="https://github.com/isaac10bolanos/MyProjects" target="_blank">
+                <img src="..//../assets/githubicon.png" alt="Github">
+            </a>
+            <a href="https://www.facebook.com/isaac.bolanos.733" target="_blank">
+                <img src="..//../assets/facebookicon.png" alt="Facebook">
+            </a>
+            <a href="https://www.youtube.com/watch?v=NoNnW-gYu04" target="_blank">
+                <img src="..//../assets/youtubeicon2.png" alt="YouTube" class="youtube-icon">
+            </a>
+        </div>
+    </section>
+    <section>
+
+    </section>
+</section>
 </main>
+
 
