@@ -1,10 +1,3 @@
-
-
-/* h1 {
-    margin: 0;
-    font-size: 28px;
-} */
-
 main {
     display: flex;
     justify-content: center;
@@ -22,11 +15,61 @@ main {
     overflow: hidden;
 }
 
+.div-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.div-container img {
+    display: block;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.book-container {
+    display: flex;
+    align-items: center;
+}
+
+.book-title {
+    margin: 10px 0;
+  }
+  
+  .book-author {
+    margin: 5px 0;
+  }
+  
+  .book-description {
+    margin: 10px 0;
+  }
+
 .image-container img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+h1 {
+    position: absolute;
+    color: #ffffff;
+    font-size: 48px;
+    text-align: center;
+    z-index: 2;
+    top: 10%;
+}
+
+/* 
+
+h1 {
+    margin: 0;
+    font-size: 28px;
 }
 
 .overlay {
@@ -105,7 +148,8 @@ h1 {
 }
 
 
-/* Section with icons */
+
+
 
 .social-media {
     display: flex;
@@ -136,7 +180,10 @@ h1 {
     width: 35px;
 }
 
-/* Hours of Operation -- Holidays and Closures */
+
+
+
+
 
 .info-container {
     display: flex;
@@ -148,12 +195,16 @@ h1 {
     flex: 1;
     background-color: #f0f0f0;
     padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   .holidays-closures {
     flex: 1;
     background-color: #e0e0e0;
     padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   .hours-of-operation h2,
@@ -181,4 +232,12 @@ h1 {
   .holidays-closures li {
     margin-bottom: 5px;
   }
-
+  
+  
+  
+  
+  
+  
+  
+  
+ */

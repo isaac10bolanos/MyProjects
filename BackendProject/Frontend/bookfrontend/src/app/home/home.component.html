@@ -1,17 +1,38 @@
 
-
 <main>
+    <div class="image-container">
+        <img src="..//../assets/pexels-suzy-hazelwood-1098601.jpg" alt="Book shelft">
+        <h1>Discover Captivating Worlds: Book Home Page</h1>
+    </div>
+        
+    <div class="div-container">
+
+    
+        <div>
+            <ng-container *ngFor="let book of localBooks">
+                <div class="book-container">
+                    <img [src]="book.imageUrl" alt="Featured Book">
+                    <h2 class="book-title">{{ book.title }}</h2>
+                    <p class="book-author">{{ book.author }}</p>
+                    <p class="book-description">{{ book.description }}</p>
+                </div>
+                
+                
+ 
+            </ng-container>
+        </div>
+
+
+
+    </div>
+    
+</main>
+<!-- <main>
     <div class="image-container">
         <img src="../assets/pexels-suzy-hazelwood-1098601.jpg" alt="Book shelf">
         <h1>Discover Captivating Worlds: Our Book Home Page</h1>
     </div>
 <section>
-    <!-- <section class="content-section">
-        <div class="content">
-            <h2>Welcome to My Book Website</h2>
-            <p>Discover a world of captivating stories and literary adventures. Explore our curated collection of books, find new reading recommendations, and connect with fellow bookworms.</p>
-        </div>
-    </section> -->
 
     <section class="featured-book">
         <ng-container *ngFor="let book of localBooks">
@@ -63,15 +84,7 @@
                 </tr>
             </table>
         </div>
-        <div class="holidays-closures">
-            <h2>Holidays and Closures</h2>
-            <ul>
-                <li>New Year's Day (January 1)</li>
-                <li>Independence Day (July 4)</li>
-                <li>Thanksgiving Day (Fourth Thursday of November)</li>
-                <li>Christmas Day (December 25)</li>
-            </ul>
-        </div>
+
     </section>
 
     
@@ -99,6 +112,6 @@
 
     </section>
 </section>
-</main>
+</main> -->
 
 

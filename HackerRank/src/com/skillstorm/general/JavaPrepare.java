@@ -10,10 +10,76 @@ public class JavaPrepare {
 	
 	public static void main(String[] args){
 		Scanner scan = new Scanner(System.in);
+		int tc = scan.nextInt();
+		
+		for (int i = 0; i < tc; i++) {
+			
+			try {
+			
+			long x = scan.nextLong();
+			System.out.println(x + " can be fitted in:");
+			
+			if (x >= Short.MIN_VALUE && x <= Short.MAX_VALUE) {
+				System.out.println("* short");
+			}
+			
+			if (x >= Integer.MIN_VALUE && x <= Integer.MAX_VALUE) {
+				System.out.println("* int");
+			}
+			
+			if (x >= Long.MIN_VALUE && x <= Long.MAX_VALUE) {
+				System.out.println("* long");
+			}
+			
+			} catch (Exception ex) {
+				System.out.println(scan.next() + " can't be fitted anywhere.");
+			}
+		}
+		
+		scan.close();
+//		System.out.print("Enter a number: ");
+//		int n = scan.nextInt();
 		//readInput(scan);
 		//printFormat(scan);
 		//simpleMultiply();
-		queryMath(scan);
+		//queryMath(scan);
+		//pow(scan);
+//		threeFive(n);
+	}
+	
+	public static void threeFive(int n) {
+		
+		// hacker rank question
+		// if number is divisible by 3, 5, or both
+		System.out.println();
+		for (int i = 1; i <= n; i++) {
+			if (i % 5 == 0 && i % 3 == 0) {
+				System.out.println(i + " is both");
+			} else if (i % 3 == 0) {
+				System.out.println(i + " -- is divisible by 3");
+			} else if (i % 5 == 0) {
+				System.out.println(i + " -- is divisible by 5");
+			} else {
+				System.out.println(i);
+			}
+		}
+		
+	}
+	
+	public static void pow(Scanner scan) {
+		int t = scan.nextInt();
+		for (int i = 0; i < t; i++) {
+			int a = scan.nextInt();
+			int b = scan.nextInt();
+			int n = scan.nextInt();
+			
+			int currentValue = a;
+			for (int j = 0; j < n; j++) {
+				currentValue += (int)(Math.pow(2, j) * b);
+				System.out.print(currentValue + " ");
+			}
+			System.out.println();
+		}
 	}
 	
 	public static void queryMath(Scanner scan) {

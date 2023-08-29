@@ -1,7 +1,7 @@
-header {
+/* header {
     background-color: #2c3e50;
     padding: 20px;
-    text-align: center; /* Center the content horizontally */
+    text-align: center;
 }
 
 .navbar {
@@ -11,7 +11,7 @@ header {
 }
 
 .logo-container {
-    margin-bottom: 20px; /* Add spacing below the logo */
+    margin-bottom: 20px;
 }
 
 .logo {
@@ -24,9 +24,13 @@ header {
 .nav-links {
     list-style: none;
     display: flex;
-    justify-content: center; /* Center the links horizontally */
+    justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
 }
 
 .nav-links li a {
@@ -38,4 +42,73 @@ header {
 
 .nav-links li a:hover {
     color: #f1c40f;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent; 
+    min-width: 160px;
+    box-shadow: none;
+    z-index: 1;
+    padding: 10px;
+    left: 0;
+    top: 100%;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1; 
+    display: block;
+}
+
+.dropdown-content a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: transparent;
+}
+
+.dropdown-content li {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content li:before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #333;
+    border-radius: 50%;
+    margin-right: 10px;
+} */
+
+header {
+    font-size: 30px;
+    text-align: center;
+    background-color: #2c3e50;
+    text-transform: uppercase;
+    padding-top: .5em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+div {
+    display: block;
+    width: 200px;
+    font-size: 12px;
+    float: right;
+    text-transform: capitalize;
 }
