@@ -49,7 +49,7 @@ public class UserLogic {
 					Logic.clearConsole();
 					Logic.printHeading("Your name is " + name + ".\nIs that correct?");
 					System.out.println("(1) Yes!");
-					System.out.println("(2) No, I want to change my name.");
+					System.out.println("(2) No, I want to change my name.\n");
 			
 					choice = Integer.parseInt(in.nextLine().trim());
 				}catch(Exception e) {
@@ -84,7 +84,7 @@ public class UserLogic {
 				Logic.printHeading("What kind of Jedi are you?");
 				System.out.println("(1) Jedi Master");
 				System.out.println("(2) Jedi Knight");	
-				System.out.println("(3) Sith Lord");
+				System.out.println("(3) Sith Lord\n");
 
 				
 				choice = Integer.parseInt(in.nextLine().trim());
