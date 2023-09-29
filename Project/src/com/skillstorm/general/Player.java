@@ -1,6 +1,7 @@
 package com.skillstorm.general;
 
 public abstract class Player {
+	// Let's see if this comment is tracked with new branch
 	
 	private String name;
 	private String type;
