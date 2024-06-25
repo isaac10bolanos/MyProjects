@@ -1,0 +1,216 @@
+package com.skillstorm.general2;
+
+import java.util.Scanner;
+
+public class Scene {
+	static Scanner scanner = new Scanner(System.in);
+	static Master yoda = new Master("Yoda", 900, "Master", 5, 100, "Green Lightsaber");
+	static Sith darth = new Sith("Darth Vader", 22, "Padawan", 1, 100, "Blue Lightsaber");
+	static Knight obi = new Knight("Obi-Wan", 38, "Knight", 3, 100, "Blue Lightsaber" );
+	public static String playerName;
+	
+	public static void story() {
+		boolean nameSet = false;
+		
+		
+		Logic.lineSeperator(40);
+		Logic.lineSeperator(30);
+		System.out.println("In a galaxy far far away...");
+		System.out.println("Let's see if I did this right!");
+		Logic.lineSeperator(30);
+		Logic.lineSeperator(40);
+		Logic.anythingContinue();
+		
+		do {
+			Logic.clearConsole();
+			Logic.printHeading("What's your name?");
+			playerName = scanner.next();
+			Logic.clearConsole();
+			Logic.printHeading("Your name is " + playerName + ".\nIs that correct?");
+			System.out.println("(1) Yes!");
+			System.out.println("(2) No, I want to change my name.");
+			int input = Logic.readInt("-> ", 2);
+			if(input == 1)
+				nameSet = true;
+		}while(!nameSet);
+		
+		Logic.anythingContinue();
+		printIntro();
+	}
+	
+	
+	
+//	public static void playerName() {
+//		boolean nameSet = false;
+//		String name;
+//		
+//		Logic.lineSeperator(40);
+//		Logic.lineSeperator(30);
+//		System.out.println("In a galaxy far far away...");
+//		System.out.println("Let's see if I did this right!");
+//		Logic.lineSeperator(30);
+//		Logic.lineSeperator(40);
+//		Logic.anythingContinue();
+//		
+//		do {
+//			Logic.clearConsole();
+//			Logic.printHeading("What's your name?");
+//			playerName = scanner.next();
+//			Logic.clearConsole();
+//			Logic.printHeading("Your name is " + playerName + ".\nIs that correct?");
+//			System.out.println("(1) Yes!");
+//			System.out.println("(2) No, I want to change my name.");
+//			int input = Logic.readInt("-> ", 2);
+//			if(input == 1)
+//				nameSet = true;
+//		}while(!nameSet);
+//		
+//	}
+	
+	public static void printIntro() {
+		Logic.clearConsole();
+		Logic.lineSeperator(30);
+		System.out.println("STORY");
+		Logic.lineSeperator(30);
+		System.out.println("In a galaxy far far away...");
+		System.out.println("In a dungeon where all your fears become reality, where one mistake can cause you to perish.\n"
+				+ "Run through it quickly or you may not get out.  5 chances is your limit.\n" +
+				"Your one mission:  Find the \"Easter Egg\" to escape.");
+		Logic.anythingContinue();
+		choosePlayer();
+
+	}
+	
+	public static void choosePlayer() {
+		boolean nameSet = false;
+		int selection;
+		do {
+			Logic.clearConsole();
+			Logic.printHeading("Choose a character to get Started: ");
+			System.out.println("(1) Jedi Master\n"
+						 + "(2) Jedi Knight\n"
+						 + "(3) Sith Lord");
+			selection = scanner.nextInt();
+			Logic.clearConsole();
+			Logic.printHeading("You selected " + selection + ".\nIs that correct?");
+			System.out.println("(1) Yes!");
+			System.out.println("(2) No, I want to change my name.");
+			int input = Logic.readInt("->", 2);
+			if(input == 1)
+				nameSet = true;
+		}while(!nameSet);
+		
+		if(selection == 1) {
+			
+			Yoda.door();
+		} else if (selection == 2) {
+			obiDoor();
+		} else
+			anikanDoor();
+	}
+	
+	public static void yodaDoor() {
+		boolean nameSet = false;
+		int selection;
+		
+		Logic.clearConsole();
+		Logic.lineSeperator(30);
+		yoda.status();
+		Logic.lineSeperator(30);
+		Logic.anythingContinue();
+		
+		do {
+			Logic.clearConsole();
+			Logic.printHeading("First obstacle:\nThere are 5 initial doors to begin your quest.\nWhich one to begin?");
+			System.out.println("(1) Medieval type look\n"
+						 + "(2) Red door from Insidious\n"
+						 + "(3) Breakfast club door");
+			selection = scanner.nextInt();
+			Logic.clearConsole();
+			Logic.printHeading("You selected " + selection + ".\nIs that correct?");
+			System.out.println("(1) Yes!");
+			System.out.println("(2) No, I want to change my name.");
+			int input = Logic.readInt("->", 2);
+			if(input == 1)
+				nameSet = true;
+		}while(!nameSet);
+		
+		Logic.clearConsole();
+		Logic.lineSeperator(40);
+		if(selection == 1) {
+			yoda.setLevel(7);
+			System.out.println("Your wise and strategic, up two level " + (yoda.getLevel()));
+			Logic.anythingContinue();
+			yodaLady();
+		} else if (selection == 2) {
+			System.out.println("A little strange for this decision, down one level " + (yoda.getLevel()-1));
+			System.out.println("HP took a hit as well " + (yoda.getHP()-10));
+		} else if (selection == 3)
+			System.out.println("Run away, don't mess with the bull!");
+			System.out.println("Your very small nature helped you escaped.\n"
+					+ "Up one level " + (yoda.getLevel()+1));
+			System.out.println("Nice ");
+		
+		Logic.lineSeperator(40);
+	
+		
+
+
+		
+		
+		Logic.anythingContinue();
+	//	Logic.printHeading("\nFirst obstacle:\nThere are 5 initial doors to begin your quest.\nWhich one to begin?\n 1. Medieval type look\n 2. Red door from Insidious\n 3. Breakfast club door");
+
+	}
+	
+	public static void yodaLady() {
+		boolean nameSet = false;
+		int selection;
+		
+		do {
+			Logic.clearConsole();
+			Logic.printHeading("Second obstacle:\nYou see an old lady crying in the hallway saying,\n"
+					+ "Mis hijos, mis hijos. What do you do?");
+			System.out.println("(1) Approach her and ask her what is wrong?\n"
+						 + "(2) Ignore her and continue down the hallway\n"
+						 + "(3) Find her kids.");
+			selection = scanner.nextInt();
+			Logic.clearConsole();
+			Logic.printHeading("You selected " + selection + ".\nIs that correct?");
+			System.out.println("(1) Yes!");
+			System.out.println("(2) No, I want to change my name.");
+			int input = Logic.readInt("->", 2);
+			if(input == 1)
+				nameSet = true;
+		}while(!nameSet);
+		
+		Logic.clearConsole();
+		Logic.lineSeperator(40);
+		if(selection == 1) {
+			yoda.setLevel(9);
+			System.out.println("Your wise and strategic, up two level " + yoda.getLevel());
+			Logic.anythingContinue();
+		} else if (selection == 2) {
+			System.out.println("A little strange for this decision, down one level " + (yoda.getLevel()-1));
+			System.out.println("HP took a hit as well " + (yoda.getHP()-10));
+		} else if (selection == 3)
+			System.out.println("Run away, don't mess with the bull!");
+			System.out.println("Your very small nature helped you escaped.\n"
+					+ "Up one level " + (yoda.getLevel()+1));
+			System.out.println("Nice ");
+		
+		
+		
+		
+	}
+	
+	public static void obiDoor() {
+		
+	}
+	public static void anikanDoor() {
+		
+	}
+	
+
+ 
+}

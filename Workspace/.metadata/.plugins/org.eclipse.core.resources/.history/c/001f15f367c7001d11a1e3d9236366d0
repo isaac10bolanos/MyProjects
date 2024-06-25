@@ -1,0 +1,99 @@
+package com.skillstorm.general2;
+
+public class Player {
+	
+	private String name;
+	private int age;
+	private String type;
+	private double level;
+	private double hp;
+	private String weapon;
+	
+	public Player() {}
+	
+	public Player(String name, int age, String type,
+			double level, double hp, String weapon) {
+		this.name = name;
+		this.age = age;
+		this.type = type;
+		this.level = level;
+		this.hp = hp;
+		this.weapon = weapon;
+	}
+	
+	public void hit() {
+		System.out.println("Took a hit! Current HP is " + (hp - 10));
+	}
+	
+	public void status() {
+		Logic.printHeading(type + " " + name + "\n" +
+				"\nlevel: " + level + "\nage: " + age + 
+				"\nhp: " + hp + "\nweapon: " + weapon);
+	}
+	
+	public void attack() {
+		System.out.println(name + " attacked with his strength of " + type);
+	}
+	
+	public void quote() {
+		
+	}
+	
+	public void speak() {
+		
+	}
+	
+	public void force() {
+		
+	}
+	
+	
+	public String getName() {
+		return this.name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public double getAge() {
+		return this.age;
+	}
+	
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	public String getType() {
+		return this.type;
+	}
+	
+	public void setType(String type) {
+		this.type = type;
+	}
+	
+	public double getLevel() {
+		return this.level;
+	}
+	
+	public void setLevel(double level) {
+		this.level = level;
+	}
+	
+	public double getHP() {
+		return this.hp;
+	}
+	
+	public void setHP(double hp) {
+		this.hp = hp;
+	}
+	
+	public String getWeapon() {
+		return this.weapon;
+	}
+	
+	public void setWeapon(String weapon) {
+		this.weapon = weapon;
+	}
+
+}

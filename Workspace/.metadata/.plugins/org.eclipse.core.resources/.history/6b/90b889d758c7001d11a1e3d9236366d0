@@ -1,0 +1,43 @@
+package com.skillstorm.general2;
+
+import java.util.Scanner;
+
+public class TextAdventure {
+	
+	Scanner in = new Scanner(System.in);
+	String playerName;
+	Player magician;
+	String weapon;
+	String response;
+	int score = 0;
+	int choice;
+	String easterEgg = "Easter Egg";
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		
+
+		Scene.story();
+		
+		
+		
+		TextAdventure game = new TextAdventure();
+		
+
+		
+		
+	}
+	
+
+	
+
+		
+	
+
+	
+
+}

@@ -1,0 +1,27 @@
+package com.skillstorm.producerconsumer;
+
+import java.util.Scanner;
+
+public class Notes {
+	
+	public static void main(String[] args) {
+		
+		
+		 Scanner scan = new Scanner(System.in);
+	        int i = scan.nextInt();
+	        double d = scan.nextDouble();
+	        scan.nextLine();
+	        String message = scan.nextLine();
+	        scan.close();
+	        
+
+	        // Write your code here.
+	        
+	        System.out.println("String: " + message);
+	        System.out.println("Double: " + d);
+	        System.out.println("Int: " + i);
+		
+		
+	}
+
+}

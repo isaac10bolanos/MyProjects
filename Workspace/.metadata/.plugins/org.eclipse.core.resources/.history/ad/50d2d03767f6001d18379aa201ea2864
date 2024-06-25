@@ -1,0 +1,13 @@
+package www.skillstorm.general;
+
+public class Notes {
+	
+	public static void main(String[] args) {
+		if(args == null) {
+			System.out.println("True");
+		} else {
+			System.out.println("False");
+		}
+	}
+
+}

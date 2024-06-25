@@ -1,0 +1,32 @@
+package com.skillstorm.general2;
+
+
+
+public class TextAdventure {
+	
+	
+	public static void main(String[] args) {
+		
+		
+		TextAdventure denverGame = new TextAdventure();
+		
+		
+		
+		
+
+		Scene.story();
+		
+
+		
+		
+	}
+	
+
+	
+
+		
+	
+
+	
+
+}

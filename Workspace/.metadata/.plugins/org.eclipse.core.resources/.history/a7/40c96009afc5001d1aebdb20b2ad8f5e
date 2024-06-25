@@ -1,0 +1,20 @@
+package com.skillstorm.general2;
+
+public class Witch extends Player{
+	
+	public Witch() {}
+	
+	public Witch(String name, double age, int strength, String magic,
+			double level, int hp, String weapon) {
+		super(name, age, strength, magic, level, hp, weapon);
+	}
+	
+	public void telikinisis() {
+		System.out.println(getName() + " used her " + getMagic());
+	}
+	
+	public void fly() {
+		
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.skillstorm.general;
+
+public class MyOwnNotes {
+	
+	public static void main(String[] args) {
+		
+		int count = 3;     // setup
+
+		while (count > 0) {    // condition must be an expression that evaluates to a boolean
+		System.out.println(count);
+		count = count -1;
+		}
+
+	}
+	public static void usingArray() {
+	
+	int[] nums = {3, 6, 8 };
+
+	int count = 0;
+	while (count < nums.length) {
+	System.out.println(nums[count]);
+	count++;
+	}
+	}
+
+}

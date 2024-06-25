@@ -1,0 +1,31 @@
+package com.skillstorm.general;
+
+
+
+public class MyOwnNotes {
+	
+	public static void main (String[] args) {
+		
+	//	print("Hello");
+
+	String[] cars = { "BMW", "EVO", "FORD" };
+	
+	for (String car : cars) {
+		System.out.println(cars);
+	}
+	
+	//print(cars[1]);
+	
+	//carsArray(cars);
+	
+
+	
+
+	
+	
+	
+	
+
+	}
+
+}

@@ -1,0 +1,47 @@
+package com.skillstorm.general;
+
+import java.util.Scanner;
+
+public class MyOwnNotes {
+	
+	public static void main (String[] args) {
+		
+	//	print("Hello");
+
+	String[] cars = { "BMW", "EVO", "FORD" };
+	
+	//print(cars[1]);
+	
+	//carsArray(cars);
+	
+	for (int i = 0; i <= 10; i++) {
+		for (int j = 0; j <= 10; j++)
+			System.out.print((i * j) + "");
+	}
+	System.out.println();
+	
+
+	}
+	
+	public static void carsArray(String[] cArray) {
+		int i = 0;
+		
+		System.out.println("These are my Favorite cars!: ");
+		while (i < cArray.length) {
+			
+			String temp = cArray[i];
+			System.out.println(cArray[i]);
+			i++;
+			
+		}
+		
+	}
+
+
+	public static void print(String message) {
+		
+		System.out.println(message);
+		}
+	
+	}
+

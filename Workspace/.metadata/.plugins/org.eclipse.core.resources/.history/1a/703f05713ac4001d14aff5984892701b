@@ -1,0 +1,53 @@
+package com.skillstorm.general;
+
+import java.util.Scanner;
+
+public class Project1 {
+	Scanner name;
+	String playerName;
+
+	
+	public static void main(String[] args) {
+		Scanner name = new Scanner(System.in);
+		String playerName;
+		
+		
+		System.out.println("*************************\r\n"
+				+ "In a galaxy far far away...\r\n"
+				+ "**********************************\r\n"
+				+ "In a dungeon where all your fears become reality, where one mistake can cause you to perish.\r\n"
+				+ "Run through it quickly or you may not get out.  5 chances is your limit.  \r\n"
+				+ "Your one mission:  Find the \"Easter Egg\" to escape.\r\n");
+		
+		System.out.println("Please enter your name if you dare!:\r\n");
+		playerName = name.nextLine();
+		System.out.println("\nAlright " + playerName + " let's get started!");
+				
+		Project1 game = new Project1();
+		game.playerSetup();
+		game.doorChoice();
+		
+		
+		
+	}
+	
+	public void playerSetup() {
+		Scanner name = new Scanner(System.in);
+		String playerName;
+		int score = 0;
+		String[] weapon = {"Lightsaber", "Harry Potter's Wand", "Hattori Hanzo Sword",
+						   "Mario's Hammer", "Captain America's Shield"};
+		
+//		for (int i = 0; i < weapon.length; i++) {
+//			System.out.println(weapon[i]);
+//			}
+
+		}
+	
+	public void doorChoice() {
+		System.out.println("First obstacle:  There are 5 initial doors to begin your quest.  Which one to begin?");
+		String door[] = {"Medieval type look", ""};
+	}
+	}
+
+

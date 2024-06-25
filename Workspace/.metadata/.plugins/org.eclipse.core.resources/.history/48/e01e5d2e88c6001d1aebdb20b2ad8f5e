@@ -1,0 +1,34 @@
+package com.skillstorm.general2;
+
+public class Master extends Player{
+	
+	public Master() {}
+	
+	public Master(String name, int age, String type,
+			double level, int hp, String weapon) {
+		super(name, age, type, level, hp, weapon);
+	}
+	
+
+	
+	@Override
+	public void force() {
+		System.out.println(getName() + " spun around with his " + getWeapon());
+	}
+	
+	public void goodChoice() {
+		System.out.println("Your wise and strategic, current level " + getLevel());
+	}
+	
+	public void badChoice() {
+		System.out.println("That was not a very good strategy even with your expertise,\n"
+				+ " current level " + getLevel());
+	}
+	
+	public void strike() {
+		System.out.println("You took a hit! Current HP level, " + getHP());
+	}
+	
+	
+
+}

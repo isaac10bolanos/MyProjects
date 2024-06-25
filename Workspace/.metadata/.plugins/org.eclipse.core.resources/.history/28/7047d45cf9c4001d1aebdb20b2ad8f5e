@@ -1,0 +1,13 @@
+package com.skillstorm.general;
+
+import java.util.Scanner;
+
+public class Door implements Obstacle{
+
+	@Override
+	public void obstacle() {
+	
+
+	}
+
+}

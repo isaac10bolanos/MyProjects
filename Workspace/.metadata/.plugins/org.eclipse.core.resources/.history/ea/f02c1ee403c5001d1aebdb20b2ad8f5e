@@ -1,0 +1,76 @@
+package com.skillstorm.general2;
+
+public class Player {
+	
+	private String name;
+	private double age;
+	private int strength;
+	private double stamina;
+	private boolean hero;
+	private double hp;
+	
+	public Player() {}
+	
+	public Player(String name, double age, int strength, double stamina, boolean hero, double hp) {
+		this.name = name;
+		this.age = age;
+		this.strength = strength;
+		this.stamina = stamina;
+		this.hero = hero;
+		this.hp = hp;
+	}
+	
+	public void attack() {
+		System.out.println(name + " attacked with his strength of " + strength);
+	}
+	
+	
+	public String getName() {
+		return this.name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public double getAge() {
+		return this.age;
+	}
+	
+	public void setAge(double age) {
+		this.age = age;
+	}
+	
+	public int getStrength() {
+		return this.strength;
+	}
+	
+	public void setStrength(int strength) {
+		this.strength = strength;
+	}
+	
+	public double getStamina() {
+		return this.stamina;
+	}
+	
+	public void setStamina(double stamina) {
+		this.stamina = stamina;
+	}
+	
+	public boolean getHero() {
+		return this.hero;
+	}
+	
+	public void setHero(boolean hero) {
+		this.hero = hero;
+	}
+	
+	public double getHP() {
+		return this.hp;
+	}
+	
+	public void setHP(double hp) {
+		this.hp = hp;
+	}
+
+}

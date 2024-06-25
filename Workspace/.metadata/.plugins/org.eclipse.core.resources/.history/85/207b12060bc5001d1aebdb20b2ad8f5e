@@ -1,0 +1,16 @@
+package com.skillstorm.general2;
+
+public class Wizard extends Player{
+	
+	public Wizard() {}
+	
+	public Wizard(String name, double age, int strength, String magic,
+			double level, double hp, String weapon) {
+		super(name, age, strength, magic, level, hp, weapon);
+	}
+	
+	
+	
+	
+
+}

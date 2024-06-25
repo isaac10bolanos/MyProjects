@@ -1,0 +1,12 @@
+package com.skillstorm.general2;
+
+public class Story {
+	
+	Player player = new Player();
+	
+	public void defaultSetup() {
+		
+		player.setHP(10);
+	}
+
+}

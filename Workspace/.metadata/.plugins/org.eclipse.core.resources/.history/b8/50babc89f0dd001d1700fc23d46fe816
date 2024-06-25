@@ -1,0 +1,53 @@
+package www.skillstorm.beans;
+
+// all of this comes from java.io (java.input/output)
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class MyFileReader {
+	
+	// this is our class that will read from a file
+	// when reading from a file, you need to know where that file is
+	
+	// two types of file paths
+	// you have a relative path - is not the full path, is relative to where you are in your 
+	// file system at the time
+	// you have a full / absolute path - your full address from your C drive all the way to the file
+	// 		file.	absolute paths always work no matter where you are in your file system
+	private final String txtFile = "C:\\Users\\isaac\\OneDrive\\Desktop\\Workspace\\Week8Notes\\src\\www\\skillstorm\\beans\\MyAwesomeFile.txt";
+	//C:\Users\isaac\OneDrive\Desktop\Workspace\Week8Notes\src\www\skillstorm\beans
+	
+	public void readFile() {
+		// what I want to do is just read the file and display the text to the user
+		FileInputStream in = null; // this is used to read files
+		
+		try {
+			in = new FileInputStream(txtFile); // throws an exception if the file doesn't exist
+			
+			int inByte; // is going to be used in reading in the file
+			// FileInputStreams read in your data 1 byte at a time, and when 
+			// we hit the end of our file it returns -1. -1 represent eof (end of)
+			System.out.println("My Awesome File: ");
+			while((inByte = in.read()) != -1) {
+				// read in a byte, assign it to inByte, and if it isn't -1 (eof) then print it
+				System.out.print((char)inByte);
+			}
+		} catch(FileNotFoundException ex) {
+			ex.printStackTrace();
+		} catch(IOException ex) { // has to come last because a FileNotFound is an IOException
+			ex.printStackTrace();
+		} finally {
+			// but closing it also throws an exception
+			try {
+				in.close(); // I need to close this file regardless of what happens in the code
+			} catch(IOException ex) {
+				ex.printStackTrace();
+			}
+		}
+		
+		 
+	}
+	
+
+}

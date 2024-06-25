@@ -1,0 +1,23 @@
+package com.skillstorm.general2;
+
+public class Wizard extends Player{
+	
+	public Wizard() {}
+	
+	public Wizard(String name, int age, int strength, String power,
+			double level, int hp, String weapon) {
+		super(name, age, strength, power, level, hp, weapon);
+	}
+	
+	public void animagus() {
+		System.out.println(getName() + " just transformed into and object!");
+	}
+	
+	@Override
+	public void spell() {
+		System.out.println(getName() + " casted a spell with " + getWeapon());
+	}
+	
+	
+
+}

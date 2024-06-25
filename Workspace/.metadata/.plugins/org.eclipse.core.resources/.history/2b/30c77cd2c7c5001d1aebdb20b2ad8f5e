@@ -1,0 +1,25 @@
+package com.skillstorm.general2;
+
+public class Sorceror extends Player{
+	
+	public Sorceror() {}
+
+	public Sorceror(String name, double age, int strength, String power,
+			double level, int hp, String weapon) {
+		super(name, age, strength, power, level, hp, weapon);
+	}
+	
+	public void fly() {
+		
+	}
+	
+	@Override
+	public void spell() {
+		System.out.println(getName() + " casted a spell!");
+	}
+	
+	public void mindRead() {
+		System.out.println(getName() + " can read minds!");
+	}
+	
+}

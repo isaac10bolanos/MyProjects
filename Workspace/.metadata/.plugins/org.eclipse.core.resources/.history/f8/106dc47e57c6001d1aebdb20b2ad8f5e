@@ -1,0 +1,133 @@
+package com.skillstorm.general2;
+
+import java.util.Scanner;
+
+public class Logic {
+	static Scanner scanner = new Scanner(System.in);
+	
+	public static boolean isRunning;
+	
+	
+	public static int readInt(String prompt, int userChoices) {
+		int input;
+		
+		do {
+			System.out.println(prompt);
+			try {
+				input = Integer.parseInt(scanner.next());
+				}catch(Exception e) {
+					input = -1;
+					System.out.println("Please enter an integer");
+				}
+		}while(input < 1 || input > userChoices);
+		return input;
+			
+		
+	}
+	
+	public static void clearConsole() {
+		for (int i = 0; i < 100; i++)
+			System.out.println();
+	}
+	
+	public static void lineSeperator(int n) {
+		for(int i = 0; i < n; i++)
+			System.out.print("-");
+		System.out.println();
+	}
+	
+	public static void printHeading(String title) {
+		lineSeperator(30);
+		System.out.println(title);
+		lineSeperator(30);
+	}
+	
+	public static void anythingContinue() {
+		System.out.println("\nEnter anything to continue...");
+		scanner.next();
+	}
+	
+	
+	
+	public static void storyline() {
+		
+		boolean nameSet = false;
+		String name;
+		
+		lineSeperator(40);
+		lineSeperator(30);
+		System.out.println("In a galaxy far far away...");
+		System.out.println("Let's see if I did this right!");
+		lineSeperator(30);
+		lineSeperator(40);
+		anythingContinue();
+		
+		do {
+			clearConsole();
+			printHeading("What's your name?");
+			name = scanner.next();
+			clearConsole();
+			printHeading("Your name is " + name + ".\nIs that correct?");
+			System.out.println("(1) Yes!");
+			System.out.println("(2) No, I want to change my name.");
+			int input = readInt("-> ", 2);
+			if(input == 1)
+				nameSet = true;
+		}while(!nameSet);
+		
+		Scene.printIntro();
+		
+		
+		
+		Scene.door();
+		Scene.oldLady();
+		
+		gameLoop();
+		
+		
+		
+	}
+	
+	public static void continueJourney() {
+		
+		
+		
+	}
+	
+	public static void printMenu() {
+		clearConsole();
+		printHeading("Menu");
+		System.out.println("Choose an action:");
+		lineSeperator(20);
+		System.out.println("(1) Continue on your journey");
+		System.out.println("(2) Character Info");
+		System.out.println("(3) Exit Game");
+	}
+	
+	public static void gameLoop() {
+		while(isRunning) {
+			printMenu();
+			int input = readInt("-> ", 3);
+			if(input == 1) {
+				continueJourney();
+			} else if(input == 2) {
+				characterInfo();
+			} else
+				isRunning = false;
+		}
+	}
+	
+	public static void characterInfo() {
+		Master shaka = new Master("Yoda", 25, "Master", "Spell Caster", 25, 10, "Green Lightsaber");
+		Padawan darke = new Padawan("Anikan", 45, "Padawan", "Illusion", 30, 10, "Red Lightsaber");
+		Knight draco = new Knight("Obi-Wan", 32, "Knight", "Transmutation", 35, 10, "Blue Lightsaber" );
+		clearConsole();
+		printHeading("Character Info");
+		shaka.status();
+		darke.status();
+		draco.status();
+		
+		anythingContinue();
+	}
+
+}

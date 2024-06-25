@@ -1,0 +1,16 @@
+package com.skillstorm.general;
+
+public class MyOwnNotes {
+	
+	public static void main(String[] args) {
+		
+		int count = 3;     // setup
+
+		while (count > 0) {    // condition must be an expression that evaluates to a boolean
+		System.out.println(count);
+		count = count -1;
+		}
+
+	}
+
+}

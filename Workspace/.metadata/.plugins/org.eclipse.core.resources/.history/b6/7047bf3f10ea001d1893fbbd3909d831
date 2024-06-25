@@ -1,0 +1,12 @@
+package com.skillstorm.producerconsumer;
+
+public class Notes {
+	
+	public static void main(String[] args) {
+		
+		
+		
+		boolean hasParams = (args == null);
+	}
+
+}

@@ -1,0 +1,11 @@
+package www.skillstorm.general;
+
+public class Notes {
+	
+	public static void main(String[] args) {
+		float f = (12_345.01 <= 123_345.00) ? 1024 : 123_45f;
+		System.out.println(f);
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+1685039125029	Rename type 'AlbumController'
+1685039144071	Rename type 'Album'
+1685039158070	Rename type 'ReadController'
+1685039175721	Rename type 'AlbumRepository'
+1685039264551	Rename field 'albumId'
+1685039303295	Rename field 'label'

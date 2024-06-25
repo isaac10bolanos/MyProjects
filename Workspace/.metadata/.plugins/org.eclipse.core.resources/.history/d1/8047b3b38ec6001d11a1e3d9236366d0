@@ -1,0 +1,25 @@
+package com.skillstorm.general2;
+
+public class Padawan extends Player{
+	
+	public Padawan() {}
+
+	public Padawan(String name, int age, String type,
+			double level, int hp, String weapon) {
+		super(name, age, type, level, hp, weapon);
+	}
+	
+	public void fly() {
+		
+	}
+	
+	@Override
+	public void force() {
+		System.out.println(getName() + " casted a spell!");
+	}
+	
+	public void mindRead() {
+		System.out.println(getName() + " can read minds!");
+	}
+	
+}

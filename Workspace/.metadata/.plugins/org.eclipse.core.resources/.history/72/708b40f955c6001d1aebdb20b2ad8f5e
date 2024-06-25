@@ -1,0 +1,23 @@
+package com.skillstorm.general2;
+
+public class Master extends Player{
+	
+	public Master() {}
+	
+	public Master(String name, int age, int strength, String power,
+			double level, int hp, String weapon) {
+		super(name, age, strength, power, level, hp, weapon);
+	}
+	
+	public void animagus() {
+		System.out.println(getName() + " just transformed into and object!");
+	}
+	
+	@Override
+	public void force() {
+		System.out.println(getName() + " casted a spell with " + getWeapon());
+	}
+	
+	
+
+}

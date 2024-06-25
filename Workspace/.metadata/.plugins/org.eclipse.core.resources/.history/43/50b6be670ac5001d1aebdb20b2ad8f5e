@@ -1,0 +1,12 @@
+package com.skillstorm.general2;
+
+public class Witch extends Player{
+	
+	public Witch() {}
+	
+	public Witch(String name, double age, int strength, String magic,
+			double level, double hp, String weapon) {
+		super(name, age, strength, magic, level, hp, weapon);
+	}
+
+}

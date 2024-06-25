@@ -1,0 +1,14 @@
+package com.skillstorm.general;
+
+import java.util.Scanner;
+
+public class MyOwnNotes {
+	
+	public static void main (String[] args) {
+
+	String cars[] = { "BMW", "EVO", "FORD" };
+	
+	
+
+	}
+	}

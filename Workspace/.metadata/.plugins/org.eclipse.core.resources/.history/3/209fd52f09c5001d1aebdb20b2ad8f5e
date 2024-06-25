@@ -1,0 +1,91 @@
+package com.skillstorm.general2;
+
+public class Player {
+	
+	private String name;
+	private double age;
+	private int strength;
+	private String magic;
+	private double level;
+	private double hp;
+	private String weapon;
+	
+	public Player() {}
+	
+	public Player(String name, double age, int strength, String magic,
+			double level, double hp, String weapon) {
+		this.name = name;
+		this.age = age;
+		this.strength = strength;
+		this.magic = magic;
+		this.level = level;
+		this.hp = hp;
+		this.weapon = weapon;
+	}
+	
+	public void attack() {
+		System.out.println(name + " attacked with his strength of " + strength);
+	}
+	
+	public void speak() {
+		System.out.println("Hello my name is " + name);
+	}
+	
+	
+	public String getName() {
+		return this.name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public double getAge() {
+		return this.age;
+	}
+	
+	public void setAge(double age) {
+		this.age = age;
+	}
+	
+	public int getStrength() {
+		return this.strength;
+	}
+	
+	public void setStrength(int strength) {
+		this.strength = strength;
+	}
+	
+	public String getMagic() {
+		return this.magic;
+	}
+	
+	public void setMagic(String magic) {
+		this.magic = magic;
+	}
+	
+	public double getLevel() {
+		return this.level;
+	}
+	
+	public void setLevel(double level) {
+		this.level = level;
+	}
+	
+	public double getHP() {
+		return this.hp;
+	}
+	
+	public void setHP(double hp) {
+		this.hp = hp;
+	}
+	
+	public String getWeapon() {
+		return this.weapon;
+	}
+	
+	public void setWeapon(String weapon) {
+		this.weapon = weapon;
+	}
+
+}

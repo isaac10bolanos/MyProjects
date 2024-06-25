@@ -1,0 +1,11 @@
+package com.skillstorm.general2;
+
+public class Dragon{
+
+	@Override
+	public void obstacle() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

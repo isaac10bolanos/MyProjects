@@ -1,0 +1,29 @@
+package com.skillstorm.general;
+
+import java.util.Scanner;
+
+public class GradePercentage {
+	
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
+	}
+		
+	
+		
+	double gradePercentage = 0;
+		
+	System.out.println("Want to know your grade percentage");
+		
+	
+	double input = in.nextDouble();
+		
+	if (input >= 90.0 && input <100.0) {
+			
+			
+		}
+		
+	}
+
+	
+

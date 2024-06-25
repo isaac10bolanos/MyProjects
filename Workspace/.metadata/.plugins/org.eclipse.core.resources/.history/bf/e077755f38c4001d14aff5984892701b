@@ -1,0 +1,40 @@
+package com.skillstorm.general;
+
+import java.util.Scanner;
+
+public class Project1 {
+	
+	public static void main(String[] args) {
+		
+		System.out.println("*************************\r\n"
+				+ "In a galaxy far far away...\r\n"
+				+ "**********************************\r\n"
+				+ "In a dungeon where all your fears become reality, where one mistake can cause you to perish.\r\n"
+				+ "Run through it quickly or you may not get out.  5 chances is your limit.  \r\n"
+				+ "Your one mission:  Find the \“Easter Egg”\ to escape."
+				
+		Project1 game = new Project1();
+		game.playerSetup();
+		
+		
+		
+	}
+	
+	public void playerSetup() {
+		String playerName;
+		int score = 0;
+		String[] weapon = {"Lightsaber", "Harry Potter's Wand", "Hattori Hanzo Sword",
+						   "Mario's Hammer", "Captain America's Shield"};
+		
+//		for (int i = 0; i < weapon.length; i++) {
+//			System.out.println(weapon[i]);
+//			}
+		
+		Scanner name = new Scanner(System.in);
+		System.out.println("Please enter your name:");
+		playerName = name.nextLine();
+		System.out.println("Hello " + playerName + ", lets begin!");
+		}
+	}
+
+

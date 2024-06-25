@@ -1,0 +1,21 @@
+package com.skillstorm.general2;
+
+public class Master extends Player{
+	
+	public Master() {}
+	
+	public Master(String name, int age, String type,
+			double level, int hp, String weapon) {
+		super(name, age, type, level, hp, weapon);
+	}
+	
+
+	
+	@Override
+	public void force() {
+		System.out.println(getName() + " casted a spell with " + getWeapon());
+	}
+	
+	
+
+}

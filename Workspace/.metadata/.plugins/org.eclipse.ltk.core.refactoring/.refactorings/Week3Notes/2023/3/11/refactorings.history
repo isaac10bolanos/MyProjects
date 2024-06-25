@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.skillstorm.beans.GoblinShark&apos; to &apos;Goblin&apos;&#x0D;&#x0A;- Original project: &apos;Week3Notes&apos;&#x0D;&#x0A;- Original element: &apos;com.skillstorm.beans.GoblinShark&apos;&#x0D;&#x0A;- Renamed element: &apos;com.skillstorm.beans.Goblin&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;GoblinShark&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.skillstorm.beans{GoblinShark.java[GoblinShark" matchStrategy="1" name="Goblin" qualified="false" references="true" similarDeclarations="false" stamp="1679060079812" textual="false" version="1.0"/>
+</session>

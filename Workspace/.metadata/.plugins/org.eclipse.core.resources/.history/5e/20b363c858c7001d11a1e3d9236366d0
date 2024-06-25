@@ -1,0 +1,52 @@
+package com.skillstorm.general2;
+
+import java.util.Scanner;
+
+public class TextAdventure {
+	
+	Scanner in = new Scanner(System.in);
+	String playerName;
+	Player magician;
+	String weapon;
+	String response;
+	int score = 0;
+	int choice;
+	String easterEgg = "Easter Egg";
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		
+
+		Scene.story();
+		
+		//Logic.storyline();
+		
+		TextAdventure game = new TextAdventure();
+		
+	//	game.storyLine();
+		
+		
+	}
+	
+	public void storyLine() {
+		System.out.println("*******************************\n"
+				+ "In a galaxy far far away...\n"
+				+ "*************************************\n"
+				+ "In a dungeon where all your fears become reality, where one mistake can cause you to perish.\n"
+				+ "Run through it quickly or you may not get out.  5 chances is your limit.  \n"
+				+ "Your one mission:  Find the \"Easter Egg\" to escape.\n");
+		
+		
+	}
+	
+
+		
+	
+
+	
+
+}

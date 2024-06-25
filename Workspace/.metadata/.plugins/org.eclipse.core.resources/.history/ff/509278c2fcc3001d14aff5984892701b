@@ -1,0 +1,10 @@
+package com.skillstorm.rehash;
+
+public class BetterZoo {
+	
+	// every single program starts heere
+	public static void main(String[] args) {
+		
+	}
+
+}

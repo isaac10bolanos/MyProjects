@@ -1,0 +1,391 @@
+package com.skillstorm.general2;
+
+import java.util.Scanner;
+
+public class Yoda {
+	static Scanner in = new Scanner(System.in);
+	static Master yoda = new Master("Yoda", 900, "Master", 5, 100, "Green Lightsaber");
+	
+	public static void door() {
+		boolean nameSet = false;
+		int selection;
+		
+		Logic.clearConsole();
+		Logic.lineSeperator(30);
+		yoda.status();
+		Logic.lineSeperator(30);
+		Logic.anythingContinue();
+		
+		do {
+			Logic.clearConsole();
+			Logic.printHeading("First obstacle:\nThere are 5 initial doors to begin your quest.\nWhich one to begin?");
+			System.out.println("(1) Medieval type look\n"
+						 + "(2) Red door from Insidious\n"
+						 + "(3) Breakfast club door");
+			selection = in.nextInt();
+			Logic.clearConsole();
+			Logic.printHeading("You selected " + selection + ".\nIs that correct?");
+			System.out.println("(1) Yes!");
+			System.out.println("(2) No, I want to change my decision.");
+			int input = Logic.readInt("->", 2);
+			if(input == 1)
+				nameSet = true;
+		}while(!nameSet);
+		
+		Logic.clearConsole();
+		Logic.lineSeperator(40);
+		if(selection == 1) {
+			
+ 			yoda.goodChoice();
+			Logic.lineSeperator(40);
+			Logic.anythingContinue();
+			oldLady();
+		} else if (selection == 2) {
+			
+			yoda.setLevel(4);
+			yoda.setHP(90);
+			yoda.badquote();
+			yoda.badChoice();
+			yoda.strike();
+			Logic.lineSeperator(40);
+			Logic.anythingContinue();
+			oldLady();
+			
+		} else if (selection == 3) {
+			yoda.setLevel(7);
+			yoda.goodChoice();
+			yoda.quote();
+			System.out.println("Run away, don't mess with the bull!");
+			System.out.println("Nice " + Scene.playerName + "!");
+			Logic.lineSeperator(40);
+			Logic.anythingContinue();
+			oldLady();
+		
+	
+		}
+}
+	
+	
+	public static void oldLady() {
+		boolean nameSet = false;
+		int selection;
+		
+		
+		do {
+			Logic.clearConsole();
+			Logic.printHeading("Second obstacle:\nYou see an old lady crying in the hallway saying,\n"
+					+ "Mis hijos, mis hijos. What do you do?");
+			System.out.println("(1) Approach her and ask her what is wrong?\n"
+						 + "(2) Ignore her and continue down the hallway\n"
+						 + "(3) Find her kids.");
+			selection = in.nextInt();
+			Logic.clearConsole();
+			Logic.printHeading("You selected " + selection + ".\nIs that correct?");
+			System.out.println("(1) Yes!");
+			System.out.println("(2) No, I want to change my decision.");
+			int input = Logic.readInt("->", 2);
+			if(input == 1)
+				nameSet = true;
+		}while(!nameSet);
+		
+		Logic.clearConsole();
+		Logic.lineSeperator(40);
+		if(selection == 1) {
+			
+			yoda.quote();
+			System.out.println("Why would you do that when you know she is \"La Llorona\".");
+			System.out.println("Your befuddled by her strength!");
+			yoda.hit();
+			Logic.lineSeperator(40);
+			Logic.anythingContinue();
+			aliens();
+			
+		} else if (selection == 2) {
+			yoda.goodChoice();
+			System.out.println("Your very small nature helped you escaped.\n"
+					+ "Up one level " + (yoda.getLevel()+1));
+			Logic.lineSeperator(40);
+			Logic.anythingContinue();
+			aliens();
+			
+		} else if (selection == 3)
+			yoda.badChoice();
+			Logic.lineSeperator(40);
+			Logic.anythingContinue();
+			aliens();
+			
+		
+	}
+	
+	public static void aliens() {
+		boolean nameSet = false;
+		int selection;
+		
+		
+		do {
+			Logic.clearConsole();
+			Logic.printHeading("Third obstacle:\nYou see a dozen of ALIEN’s from that movie called ALIEN\n"
+					+ "and they seem to be coming your way…what do you do?");
+			System.out.println("(1) Fight them off with your bare hands!\n"
+						 + "(2) Hide behind a wall that’s to your right.\n"
+						 + "(3) Fight them off with your lightsaber!");
+			selection = in.nextInt();
+			Logic.clearConsole();
+			Logic.printHeading("You selected " + selection + ".\nIs that correct?");
+			System.out.println("(1) Yes!");
+			System.out.println("(2) No, I want to change my decision.");
+			int input = Logic.readInt("->", 2);
+			if(input == 1)
+				nameSet = true;
+		}while(!nameSet);
+		
+		Logic.clearConsole();
+		Logic.lineSeperator(40);
+		if(selection == 1) {
+			
+			yoda.quote2();
+			System.out.println("\nGreat you used the force not your bare hands right?");
+			yoda.hit();
+			
+			Logic.lineSeperator(40);
+			Logic.anythingContinue();
+			rest();
+			
+		} else if (selection == 2) {
+			yoda.goodChoice();
+			System.out.println("Your very small nature helped you escaped.\n"
+					+ "Up one level " + (yoda.getLevel()+1));
+			Logic.lineSeperator(40);
+			Logic.anythingContinue();
+			rest();
+			
+		} else if (selection == 3)
+			yoda.badChoice();
+			System.out.println("\nGreat option now you killed all those ALIENS with " + yoda.getWeapon());
+			System.out.println("You earned some experience points! Current level: " + (yoda.getLevel()+2));
+			Logic.lineSeperator(40);
+			Logic.anythingContinue();
+			rest();
+		
+	}
+	
+	public static void rest() {
+		boolean nameSet = false;
+		int selection;
+		
+		
+		do {
+			Logic.clearConsole();
+			Logic.printHeading("Fourth obstacle:\nYou are tired of all these creepy and bizarre things that are happening.\n"
+								+ "So take the next option very meticulously:");
+			System.out.println("(1) Phew!…an elevator!\n"
+						 + "(2) Stairs that lead to who knows where.\n"
+						 + "(3) An average person size dumbwaiter.");
+			selection = in.nextInt();
+			Logic.clearConsole();
+			Logic.printHeading("You selected " + selection + ".\nIs that correct?");
+			System.out.println("(1) Yes!");
+			System.out.println("(2) No, I want to change my decision.");
+			int input = Logic.readInt("->", 2);
+			if(input == 1)
+				nameSet = true;
+		}while(!nameSet);
+		
+		
+		Logic.clearConsole();
+		Logic.lineSeperator(40);
+		if(selection == 1) {
+			
+			yoda.quote2();
+			yoda.goodChoice();
+			System.out.println("");
+			
+			
+			Logic.lineSeperator(40);
+			Logic.anythingContinue();
+			last();
+			
+			
+		} else if (selection == 2) {
+			yoda.badChoice();
+			System.out.println("");
+			Logic.lineSeperator(40);
+			Logic.anythingContinue();
+			last();
+			
+			
+		} else if (selection == 3)
+			yoda.badChoice();
+			System.out.println("");
+			Logic.lineSeperator(40);
+			Logic.anythingContinue();
+			last();
+			
+		
+	}
+	
+	public static void last() {
+		
+		boolean nameSet = false;
+		int selection;
+		
+		
+		do {
+			Logic.clearConsole();
+			Logic.printHeading("Fifth obstacle:\nYou are here at the final stage. You enter a room where there is a treasure chest in the middle of the room.\n"
+					+ "Unconsciously this game has your judgements recorded.  Every level has given you an opportunity to get enough points to pass but did you?");	
+			System.out.println("(1) Open the treasure chest\n"
+						 + "(2) Smash the treasure chest.\n"
+						 + "(3) Wrap yourself in a blanket and take a nap.");
+			selection = in.nextInt();
+			Logic.clearConsole();
+			Logic.printHeading("You selected " + selection + ".\nIs that correct?");
+			System.out.println("(1) Yes!");
+			System.out.println("(2) No, I want to change my decision.");
+			int input = Logic.readInt("->", 2);
+			if(input == 1)
+				nameSet = true;
+		}while(!nameSet);
+		
+		Logic.clearConsole();
+		Logic.lineSeperator(40);
+		if(selection == 1) {
+			yoda.quote2();
+			yoda.goodChoice();
+			System.out.println("");
+			Logic.lineSeperator(40);
+			
+			if(yoda.getLevel() >= 5) {
+				Logic.anythingContinue();
+				pass();
+			}else if (yoda.getLevel() < 5){
+				Logic.anythingContinue();
+				gameOver();
+			}
+				
+			
+			
+		} else if (selection == 2) {
+			yoda.badChoice();
+			System.out.println("");
+			Logic.lineSeperator(40);
+			
+			if(yoda.getLevel() >= 5) {
+				Logic.anythingContinue();
+				pass();
+			}else if (yoda.getLevel() < 5){
+				Logic.anythingContinue();
+				gameOver();
+			}
+			
+			
+			
+		} else if (selection == 3)
+			yoda.badChoice();
+			System.out.println("");
+			Logic.lineSeperator(40);
+			
+			if(yoda.getLevel() >= 5) {
+				Logic.anythingContinue();
+				pass();
+			}else if (yoda.getLevel() < 5){
+				Logic.anythingContinue();
+				gameOver();
+			}
+			
+		
+		
+		
+	}
+	
+	public static void pass() {
+		
+		
+		boolean nameSet = false;
+		int selection;
+		
+		
+		do {
+			Logic.clearConsole();
+			Logic.printHeading("Congratulations you passed!");
+			System.out.println("(1) Restart\n"
+					 + "(2) END");
+			selection = in.nextInt();
+			Logic.clearConsole();
+			Logic.printHeading("You selected " + selection + ".\nIs that correct?");
+			System.out.println("(1) Yes!");
+			System.out.println("(2) No, I want to change my decision.");
+			int input = Logic.readInt("->", 2);
+			if(input == 1)
+				nameSet = true;
+		}while(!nameSet);
+		
+		Logic.clearConsole();
+		Logic.lineSeperator(40);
+		if(selection == 1) {
+			
+			Logic.anythingContinue();
+			Scene.story();
+			
+			
+		} else if (selection == 2){
+
+			Logic.anythingContinue();
+			Scene.gameOver();
+		
+
+	
+		
+		
+		
+		}
+	}
+	
+	public static void gameOver() {
+		boolean nameSet = false;
+		int selection;
+		
+		
+		do {
+			Logic.clearConsole();
+			Logic.printHeading("Did not aquire enough points to get \"Easter Egg\"");
+			System.out.println("(1) Restart\n"
+						 + "(2) END");
+			selection = in.nextInt();
+			Logic.clearConsole();
+			Logic.printHeading("You selected " + selection + ".\nIs that correct?");
+			System.out.println("(1) Yes!");
+			System.out.println("(2) No, I want to change my decision.");
+			int input = Logic.readInt("->", 2);
+			if(input == 1)
+				nameSet = true;
+		}while(!nameSet);
+		
+		Logic.clearConsole();
+		Logic.lineSeperator(40);
+		if(selection == 1) {
+			
+			Logic.anythingContinue();
+			Scene.story();
+			
+			
+		} else if (selection == 2){
+
+			Logic.anythingContinue();
+			Scene.gameOver();
+		
+		}	
+	}
+	
+
+		
+	}
+	
+	
+	
+
+
+
+	
+
+

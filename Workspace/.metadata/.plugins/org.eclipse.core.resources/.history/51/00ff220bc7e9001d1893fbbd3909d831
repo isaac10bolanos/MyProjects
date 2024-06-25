@@ -1,0 +1,12 @@
+package com.skillstorm.producerconsumer;
+
+public class Notes {
+	
+	public static void main(String[] args) {
+		
+		String mStr = "123";
+		Long.valueOf(mStr).longValue();
+		System.out.println(mStr);
+	}
+
+}

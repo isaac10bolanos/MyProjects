@@ -1,0 +1,15 @@
+package com.skillstorm.general2;
+
+public class Story {
+	
+	Player player = new Player();
+	
+	public void defaultSetup() {
+		
+	Wizard shaka = new Wizard("Shaka", 25, 10, "Alteration", 25, 10, "Crossbow");
+	Sorceror darke = new Sorceror("Darke", 45, 15, "");
+		
+		
+	}
+
+}

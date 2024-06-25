@@ -1,0 +1,5 @@
+This is my new text file
+Wow this is cool!
+
+What awesome things Java can do!
+la la la

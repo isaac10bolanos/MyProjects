@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Program.java&apos; to &apos;Week9Notes/src/www.skillstorm.beans&apos;&#x0D;&#x0A;- Original project: &apos;Week8Notes&apos;&#x0D;&#x0A;- Destination element: &apos;Week9Notes/src/www.skillstorm.beans&apos;&#x0D;&#x0A;- Original element: &apos;www.skillstorm.Program.java&apos;" description="Copy compilation unit" destination="=Week9Notes/src&lt;www.skillstorm.beans" element1="/src&lt;www.skillstorm{Program.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1682615713753" units="1" version="1.0"/>
+</session>

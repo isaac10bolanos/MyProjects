@@ -1,0 +1,14 @@
+package com.skillstorm.general;
+
+public class ComplexInterestCalculator {
+	
+	public static void main(String[] args) {
+		
+		double accrued = 0, principal = 0, rate = 0, time = 0, interest = 0;
+		
+		System.out.println("Welcome to the Simplist Interest Calculator! ");
+		System.out.println("");
+		System.out.println("Enter principal amount: ");
+	}
+
+}

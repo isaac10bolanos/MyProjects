@@ -1,0 +1,13 @@
+package com.skillstorm.general2;
+
+public class Player {
+	
+	private String name;
+	private double age;
+	private int strength;
+	private double stamina;
+	boolean hero;
+	private double hp;
+	
+
+}

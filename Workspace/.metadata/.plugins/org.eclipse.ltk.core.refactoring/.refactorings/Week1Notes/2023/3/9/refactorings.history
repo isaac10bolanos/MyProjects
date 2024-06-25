@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;result1&apos; in &apos;com.skillstorm.general.Day3.main(...)&apos; to &apos;doubleResult&apos;&#x0D;&#x0A;- Original project: &apos;Week1Notes&apos;&#x0D;&#x0A;- Original element: &apos;com.skillstorm.general.Day3.main(String[]).result1&apos;&#x0D;&#x0A;- Renamed element: &apos;result1&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;result1&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;com.skillstorm.general{Day3.java[Day3~main~\[QString;@result1!2125!2143!2132!2138!D!0!false" name="doubleResult" references="true" stamp="1677686351887" version="1.0"/>
+</session>

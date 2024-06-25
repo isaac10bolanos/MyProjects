@@ -1,0 +1,7 @@
+package com.skillstorm.general;
+
+public interface Obstacle {
+	
+	public void obstacle();
+
+}

@@ -1,0 +1,19 @@
+package com.skillstorm.general;
+
+public class Project1 {
+	
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+	public void playerSetup() {
+		
+		int score = 0;
+		String[] weapon = {"Lightsaber", "Harry Potter's Wand", "Hattori Hanzo Sword",
+						   "Mario's Hammer", "Captain America's Shield"};
+		}
+	}
+
+
